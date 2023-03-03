@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+
+  <title>Luke Matuza Photography</title>
+
+  <!-- Bootstrap meta data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="SHS WebDev Bootstrap sample">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- JavaScript -->
+  <!-- These are needed to get the responsive menu to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="JS/script.js"></script>
+
+  <!-- Custom styles for this template -->
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <!---------------------------------- Begin the nav-bar ------------->
+  <div class="menu">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand">Luke Matuza </br>Photography</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="aboutme.html" class="nav-item nav-link">About Me</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Photos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="landscapes.html">Landscapes</a>
+              <a class="dropdown-item" href="portraits.html">Portraits</a>
+            </div>
+          </li>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!---------------------------------- End the nav-bar ------------->
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="carousel-image" src="images/landscapes/12.jpg" alt="Canyon">
+      </div>
+      <div class="carousel-caption">
+        <h1>Welcome to my Website!</h1>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="images/landscapes/8.jpg" alt="Gas Station">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="images/landscapes/18.jpg" alt="Artist's Pallette">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  <h1>
+    <center>Check it out!</center>
+  </h1>
+
+  <div class="card-deck">
+    <div class="card">
+      <a href="aboutme.html">
+        <img class="click-image card-img-top" src="images/aboutme.jpg" alt="Card image cap">
+      </a>
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <center>Learn more about me!</center>
+        </h5>
+      </div>
+    </div>
+    <div class="card">
+      <a href="photos.html">
+        <img class="click-image card-img-top" src="images/photo7.jpg" alt="Card image cap">
+      </a>
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <center>Check out my work!</center>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <div class="card-header">
+      Contact
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Want to contact me?</h5>
+      <p class="card-text">Ask me about anything!</p>
+      <a href="contact.html" class="btn btn-primary">Contact Me</a>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

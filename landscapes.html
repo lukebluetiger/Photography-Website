@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+
+    <title>Landscapes | Luke Matuza Photography</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand">Luke Matuza </br>Photography</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="aboutme.html" class="nav-item nav-link">About Me</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Photos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="landscapes.html">Landscapes</a>
+                            <a class="dropdown-item" href="portraits.html">Portraits</a>
+                        </div>
+                    </li>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <!-- The grid: four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="images/landscapes/1.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/2.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/3.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/4.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/5.jpg" onclick="photoClick(this); changeText()">
+        </div>
+        <div class="column">
+            <img src="images/landscapes/6.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/7.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/8.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/9.jpg" onclick="photoClick(this); changeText()">
+        </div>
+        <div class="column">
+            <img src="images/landscapes/11.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/12.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/13.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/14.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/15.jpg" onclick="photoClick(this); changeText()">
+        </div>
+        <div class="column">
+            <img src="images/landscapes/16.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/17.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/18.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/19.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/20.jpg" onclick="photoClick(this); changeText()">
+            <img src="images/landscapes/10.jpg" onclick="photoClick(this); changeText()">
+        </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+
+
+</body>
+
+</html>
