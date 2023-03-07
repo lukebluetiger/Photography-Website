@@ -6,6 +6,7 @@
 * {
   font-family: 'Chivo', sans-serif;
   line-height: 1.5;
+  color: rgb(216, 216, 216);
 }
 
 :root {
@@ -152,6 +153,11 @@
   }
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 h1 {
   padding-left: 15px;
   padding-right: 15px;
@@ -167,6 +173,36 @@ h2 {
   margin: 15px 25px;
 }
 
+body {
+  background-color: #2A2A2A;
+  margin: 0 0 100px;
+  /* bottom = footer height */
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  color: #d6d6d6
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: #d6d6d6;
+  text-decoration: none;
+}
 
 .centered {
   position: absolute;
@@ -176,8 +212,8 @@ h2 {
 }
 
 .btn-primary {
-  background-color: darkcyan;
-  border-color: darkcyan;
+  background-color: #0E7C7B;
+  border-color: #17BEBB;
 }
 
 .btn-primary:hover {
@@ -209,9 +245,17 @@ h2 {
   margin-bottom: 25px;
 }
 
+.photo {
+
+  margin: 15px 25px;
+  padding: 10px 20px;
+  float: left;
+}
+
 .p-aboutme {
   margin: 15px 25px;
   padding: 10px 20px;
+  float: right;
 }
 
 .form-message {
