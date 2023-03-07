@@ -173,6 +173,14 @@ h2 {
   margin: 15px 25px;
 }
 
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 20px;
+}
+
 body {
   background-color: #2A2A2A;
   margin: 0 0 100px;
@@ -245,22 +253,24 @@ footer {
   margin-bottom: 25px;
 }
 
-.photo {
+#photo {
 
   margin: 15px 25px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   float: left;
 }
 
-.p-aboutme {
-  margin: 15px 25px;
-  padding: 10px 20px;
-  float: right;
-}
 
 .form-message {
   padding-bottom: 5rem;
   padding-top: 1.25rem;
+  color: #b5b5b5;
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #3d3d3d;
+  color: #b5b5b5;
 }
 
 #fullpage {
