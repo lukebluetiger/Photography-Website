@@ -274,7 +274,11 @@
   }
 
   .portrait-image {
-    height: 60vh;
+    height: 59vh;
+  }
+
+  .landscape-image {
+    margin-top: 50%;
   }
 }
 
