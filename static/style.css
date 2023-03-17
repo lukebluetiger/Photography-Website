@@ -110,6 +110,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 /* Create four equal columns that sits next to each other */
