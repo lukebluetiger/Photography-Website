@@ -21,6 +21,13 @@
   object-fit: cover;
 }
 
+.navbar-dark .navbar-toggler {
+  border: none;
+  font-size: 29px;
+  color: rgb(255 255 255);
+  border-color: rgba(255, 255, 255, .1);
+}
+
 .bg-dark {
   background-color: rgb(46, 46, 46) !important;
 }
@@ -358,6 +365,7 @@ div.copyright {
   right: 0;
   width: 100%;
 }
+
 
 .centered {
   position: absolute;
