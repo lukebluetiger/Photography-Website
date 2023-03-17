@@ -195,6 +195,7 @@
   right: 25px;
   font-size: 4rem;
   font-weight: 100;
+  text-shadow: none;
   cursor: pointer;
   opacity: 0.5;
 }
