@@ -1,7 +1,7 @@
 
 
 function openModal() {
-    if ($(window).width() > 1025) {
+    if ($(window).width() > 768) {
         document.getElementById('my-modal').style.display = "inline-flex"; //changes display property
 
         // hide scrollbnar when image viewer is opened
@@ -10,7 +10,7 @@ function openModal() {
 }
 
 function closeModal() {
-    if ($(window).width() > 1025) {
+    if ($(window).width() > 768) {
         document.getElementById('my-modal').style.display = "none"; //changes display property
 
         // hide scrollbnar when image viewer is opened
@@ -35,7 +35,7 @@ function currentSlide(n) {
 
 //Main function for image viewer
 function showSlides(n) {
-    if ($(window).width() > 1025) {
+    if ($(window).width() > 768) {
         var i;
 
         // get all elemnets with class .my-slides
