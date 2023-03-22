@@ -3,8 +3,13 @@
   src: url("Raleway-Thin.ttf")
 }
 
+@font-face {
+  font-family: 'Chivo';
+  src: url("Chivo.ttf")
+}
+
 * {
-  font-family: 'Raleway-Thin', sans-serif;
+  font-family: 'Chivo', sans-serif;
   line-height: 1.5;
   color: rgb(216, 216, 216);
 }
@@ -13,6 +18,10 @@
   --background: #d6d6d6;
   --foreground: #171717;
 
+}
+
+.navbar-brand {
+  font-family: 'Raleway-Thin', sans-serif;
 }
 
 .carousel-image {
@@ -368,6 +377,8 @@ footer {
 
 div.copyright {
   display: block;
+  font-family: 'Raleway-Thin', sans-serif;
+  text-align: -webkit-center;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -383,13 +394,15 @@ div.copyright {
 }
 
 .btn-primary {
-  background-color: #0E7C7B;
-  border-color: #17BEBB;
+  background-color: #f1f1f1;
+  border-color: #6c6c6c;
+  color: #353535;
 }
 
 .btn-primary:hover {
-  background-color: rgb(7, 96, 96);
-  border-color: rgb(7, 96, 96);
+  background-color: #a3a3a3;
+  border-color: #6c6c6c;
+  color: #353535;
 }
 
 .form-group {
