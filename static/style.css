@@ -405,6 +405,7 @@ div.copyright {
   background-color: #f1f1f1;
   border-color: #6c6c6c;
   color: #353535;
+  border-radius: 0;
 }
 
 .btn-primary:hover {
@@ -451,4 +452,7 @@ div.copyright {
   background-color: #1a1a1a;
   border: 1px solid #3d3d3d;
   color: #b5b5b5;
+  width: 700px;
+  max-width: 100%;
+  border-radius: 0;
 }

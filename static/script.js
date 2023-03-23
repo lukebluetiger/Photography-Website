@@ -44,7 +44,7 @@ function showSlides(n) {
         // If the slideIndexJS is greater than total no of images open first image
         if (n > slidesJS.length) { slideIndexJS = 1; }
 
-        if (n < 1) { slideIndexJS = slideIndexJS.length; }
+        if (n < 1) { slideIndexJS = slidesJS.length; }
 
         // hide all images
         for (i = 0; i < slidesJS.length; i++) {
