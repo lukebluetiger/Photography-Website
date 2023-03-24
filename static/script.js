@@ -55,7 +55,7 @@ function showSlides(n) {
         slidesJS[slideIndexJS - 1].style.display = "block";
 
         // show index numbers 
-        document.getElementByID('index-number').innerHTML = slidesJS[slideIndexJS - 1].getAttribute('data-index-number');
+        document.getElementById('index-number').innerHTML = slidesJS[slideIndexJS - 1].getAttribute('data-index-number');
         var imagesJS = document.getElementsByClassName("image");
         document.getElementById('caption').innerHTML = imagesJS[slideIndexJS - 1].alt;
     }
