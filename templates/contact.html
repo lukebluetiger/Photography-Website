@@ -31,7 +31,7 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Luke Matuza </br>Photography</a>
+            <a class="navbar-brand" href="/">Luke Matuza </br>Photography</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,19 +39,19 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link">home</a>
-                    <a href="about.html" class="nav-item nav-link">about</a>
+                    <a href="/" class="nav-item nav-link">home</a>
+                    <a href="/about" class="nav-item nav-link">about</a>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             photos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="landscapes.html">landscapes</a>
-                            <a class="dropdown-item" href="portraits.html">portraits</a>
+                            <a class="dropdown-item" href="/photos/landscapes">landscapes</a>
+                            <a class="dropdown-item" href="/photos/portraits">portraits</a>
                         </div>
                     </li>
-                    <a href="contact.html" class="nav-item nav-link active">contact</a>
+                    <a href="/contact" class="nav-item nav-link active">contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
             </div>
@@ -61,23 +61,25 @@
 
     <p>Feel free to contact me here for any questions or work:</p>
 
-    <form>
+    <form action="submit_form" method="post">
         <div class="form-group">
             <label for="name1">Full Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="enter name">
+            <input name="name" type="text" class="form-control" id="name" aria-describedby="name"
+                placeholder="enter name" minlength="3">
         </div>
         <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="enter email">
+            <input name="email" type="email" class="form-control" id="email" aria-describedby="email"
+                placeholder="enter email" minlength="3">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                 else.</small>
         </div>
         <div class="form-group">
             <label for="message">Message</label>
-            <input type="text" class="form-control form-message" id="message" aria-describedby="message"
-                placeholder="enter message">
+            <input name="message" type="text" class="form-control form-message" id="message" aria-describedby="message"
+                placeholder="enter message" autocomplete="off" minlength="3">
         </div>
-        <button type="submit" class="btn btn-primary" onclick="messageSent()">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="">Submit</button>
     </form>
 
 </body>
