@@ -52,6 +52,7 @@ function showSlides(n) {
         }
 
         // Show the images whose thumbnail is clicked
+        // Show the images whose thumbnail is clicked
         slidesJS[slideIndexJS - 1].style.display = "block";
 
         // show index numbers 

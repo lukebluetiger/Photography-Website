@@ -21,14 +21,14 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route("/photos/landscapes")
-def landscapes():
-    return render_template('landscapes.html')
+@app.route("/photos/nature")
+def nature():
+    return render_template('nature.html')
 
 
-@app.route("/photos/portraits")
-def portraits():
-    return render_template('portraits.html')
+@app.route("/photos/people")
+def people():
+    return render_template('people.html')
 
 
 @app.route("/thankyou")
