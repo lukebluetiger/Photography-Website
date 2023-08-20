@@ -28,7 +28,7 @@ def nature():
 
 
 @app.route("/photos/cities")
-def people():
+def cities():
     return render_template('cities.html')
 
 
