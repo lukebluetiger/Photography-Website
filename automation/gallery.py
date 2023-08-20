@@ -18,16 +18,28 @@ image_html = '<div class="row">\n'
 column_end = 0
 # should be, enumerate over images, each image = index + (4 * n) for each image in column, then go to next column starting at 2, and repeat the process
 # column 1 = index = 1, index = 1 + 4, (5), index = 1 + 8, (9) and so on, so index enumeration is only for four columns
-for index, image_file in enumerate(image_files, start=1):
-    image_path = os.path.join(image_directory, image_file)
-    if index % 4 == 1 and index >= column_end:
+# for index, image_file in enumerate(image_files, start=1):
+#     image_path = os.path.join(image_directory, image_file)
+#     if index % 4 == 1 and index >= column_end:
+#         image_html += '<div class="column">\n'
+#         column_end = index + int(len(image_files) / 4)
+#         print(index , column_end)
+#     image_html += generate_image_html(image_path, index) + "\n"
+#     if index == column_end:
+#         image_html += "</div>\n"  
+# image_html += "</div>\n"  
+
+count = 0
+while count < len(image_files):
+    for index in range(4):
         image_html += '<div class="column">\n'
-        column_end = index + int(len(image_files) / 4)
-        print(index , column_end)
-    image_html += generate_image_html(image_path, index) + "\n"
-    if index == column_end:
-        image_html += "</div>\n"  
-image_html += "</div>\n"  
+        for n in range(int(len(image_files) / 4)):
+            image_path = os.path.join(image_directory, image_files[index + (4 * n)])
+            image_html += f'<img src="{image_path}" onclick="openModal(); currentSlide({index + (4 * (n))})\n">'
+            count += 1
+        image_html += "</div>\n" 
+    
+    image_html += "</div>\n" 
 
 # Write the generated HTML to the output file
 with open(output_html_file, "w") as f:
