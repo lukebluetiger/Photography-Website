@@ -27,6 +27,11 @@ def nature():
     return render_template('nature.html')
 
 
+@app.route("/photos/cities")
+def people():
+    return render_template('cities.html')
+
+
 @app.route("/photos/people")
 def people():
     return render_template('people.html')
